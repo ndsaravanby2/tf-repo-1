@@ -2,3 +2,8 @@ resource "aws_instance" "nds-cloud-vm" {
  ami = "ami-0532be01f26a3de55"
  instance_type = "t2.micro" 
 }
+
+resource "aws_security_group" "demo-sg-hcp" {
+  description = "demo-sg-hcp"
+  name = "demo-sg-from-hcp"
+}
